@@ -19,7 +19,9 @@ dependencies = [
     "openpyxl",
     "matplotlib"
 ]
-
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["test"]
 [tool.setuptools]
 package-dir = {"" = "src"}
 
