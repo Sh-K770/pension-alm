@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pension-alm"
+version = "0.1.0"
+description = "Asset-Liability Management framework for institutional pension risk modeling"
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+    {name = "Sholeh Karimghasemi"}
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "openpyxl",
+    "matplotlib"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
