@@ -52,3 +52,7 @@ class Liability:
     def present_value(self) -> float:
         """Return the present value of projected pension liabilities."""
         return self.discount_engine.present_value(self.cash_flows())
+
+    def projected_value(self) -> float:
+        """Return projected liability value used in balance-sheet construction."""
+        return self.present_value()
